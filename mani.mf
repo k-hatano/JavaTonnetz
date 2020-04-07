@@ -1,2 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: JavaTonnetz
+Main-Class: JavaTonnetz.JavaTonnetz
+Class-Path: JavaTonnetz.*;.

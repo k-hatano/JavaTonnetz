@@ -1,7 +1,7 @@
 # Makefile
-JavaTonnetz: JavaTonnetz.java
-	javac JavaTonnetz.java
-	jar cvfm JavaTonnetz.jar mani.mf *.class
+JavaTonnetz: src/JavaTonnetz/JavaTonnetz.java
+	javac -d classes src/JavaTonnetz/*.java
+	jar cvfm JavaTonnetz.jar mani.mf -C classes/ .
 clean:
-	rm *.class
 	rm *.jar
+	rm classes/JavaTonnetz/*.class
